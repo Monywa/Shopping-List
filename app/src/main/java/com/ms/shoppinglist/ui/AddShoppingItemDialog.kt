@@ -1,16 +1,19 @@
 package com.ms.shoppinglist.ui
 
 import android.content.Context
+import android.content.res.Resources
 import android.os.Bundle
+import android.view.Window
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatDialog
 import com.ms.shoppinglist.AddDialogListener
 import com.ms.shoppinglist.R
 import com.ms.shoppinglist.data.db.entities.ShoppingItem
 
-class AddShoppingItemDialog(context:Context,var addDialogListener:AddDialogListener):AppCompatDialog(context) {
+class AddShoppingItemDialog(context:Context,var addDialogListener:AddDialogListener):AlertDialog(context){
 
     val edName by lazy {
         findViewById<EditText>(R.id.ed_name)

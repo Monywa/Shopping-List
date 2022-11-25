@@ -60,9 +60,5 @@ class MainActivity : AppCompatActivity(),DIAware{
 
             }).show()
         }
-
-
-
     }
-
 }
